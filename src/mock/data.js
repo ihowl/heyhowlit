@@ -9,7 +9,7 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: '',
+  title: 'What is this',
   name: '',
   subtitle: '',
   cta: '',
@@ -57,7 +57,7 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
+  cta: 'Interested in connecting? Well then let\'s connect!',
   btn: '',
   email: '',
 };
