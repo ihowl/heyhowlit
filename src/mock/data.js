@@ -77,13 +77,8 @@ export const footerData = {
     },
     {
       id: nanoid(),
-      name: 'linkedin',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: '',
+      name: 'youtube',
+      url: 'https://www.youtube.com/channel/UC46lCrqef9VRL37PfvbUHiA',
     },
   ],
 };
