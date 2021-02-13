@@ -72,8 +72,8 @@ export const footerData = {
     },
     {
       id: nanoid(),
-      name: 'codepen',
-      url: '',
+      name: 'twitch',
+      url: 'https://www.twitch.com/leftstickright',
     },
     {
       id: nanoid(),
