@@ -3,6 +3,9 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import BackgroundSlider from 'react-background-slider';
+import ItMe from "../../images/itme.jpg";
+
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -23,11 +26,16 @@ const Header = () => {
 
   return (
     <section id="hero" className="jumbotron">
+      <BackgroundSlider
+        images={['overwatch.gif', 'hades.gif', 'goosegame.gif']}
+        duration={10} transition={2} />
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
-            <span className="text-color-main">{name || 'howlit'}</span>
+            <Fade top={true} duration={1000} delay={1000} distance="10px">
+              <span className="text-color-main">{name || 'howlit'}</span>
+            </Fade>
             <br />
             {subtitle || "I play video games on the internet"}
           </h1>
@@ -42,6 +50,7 @@ const Header = () => {
           </p>
         </Fade>
       </Container>
+      
     </section>
   );
 };
